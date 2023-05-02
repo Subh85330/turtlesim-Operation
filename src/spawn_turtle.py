@@ -18,4 +18,5 @@ theta=random.random()*pi
 rospy.wait_for_service('/spawn')
 #Waiting for 10 seconds
 time.sleep(10)
+#calling service
 rosservice.call_service("/spawn",[x, y, theta, ""])
