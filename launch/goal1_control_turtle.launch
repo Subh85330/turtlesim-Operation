@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+        <node pkg="turtlesim" type="turtlesim_node" name="turtle"/>
+        <node pkg="flytbase_turtle" type="goal1_control_turtle.py" name="goal1_control_turtle"/>
+</launch>
