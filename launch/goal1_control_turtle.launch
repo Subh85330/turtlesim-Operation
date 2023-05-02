@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <launch>
         <node pkg="turtlesim" type="turtlesim_node" name="turtle"/>
-        <node pkg="flytbase_turtle" type="goal1_control_turtle.py" name="goal1_control_turtle"/>
+        <node pkg="flytbase_turtle" type="goal1_control_turtle.py" name="goal1_control_turtle" />
+        <node pkg="plotjuggler" type="plotjuggler" name="plotjuggler_node"/>
 </launch>
