@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+        <node pkg="turtlesim" type="turtlesim_node" name="turtle"/>
+        <node pkg="flytbase_turtle" type="goal3_rotate_circle.py" name="goal3_circle_maker" />
+        <node pkg="plotjuggler" type="plotjuggler" name="plotjuggler_node"/>
+</launch>

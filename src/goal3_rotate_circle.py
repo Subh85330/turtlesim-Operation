@@ -106,7 +106,7 @@ class FlytbaseTurtle():
 
 controlObj=FlytbaseTurtle()
 kp=1
-kd=0.1
+kd=0.01
 ki=0.0001
 k_accel = 0.1
 k_decel = 0.3
