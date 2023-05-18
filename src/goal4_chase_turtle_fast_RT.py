@@ -91,7 +91,9 @@ class FlytbaseTurtle():
          t_start = time.time()
          vel_prev = Twist()
          while(not rospy.is_shutdown()):
+              print(rospy.get_param('IsCaught'))
               if(rospy.get_param('IsCaught')):
+                    rospy.loginfo("Caught Completed")
                     zero_vel = Twist()
                     self.turtle_vel_pub.publish(zero_vel)
                     break
@@ -120,7 +122,7 @@ kd=0.1
 ki=0.0001
 k_accel = 0.1
 k_decel = 0.3
-v=2
-r=2
+v=4
+r=4
 while not rospy.is_shutdown():
 	controlObj.moveOnCircle(v,r,k_accel,k_decel)

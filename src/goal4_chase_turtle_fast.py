@@ -45,19 +45,19 @@ class FlytbaseTurtle():
             
             
             
-            if(dist<0.3):
+            if(dist<1):
                 break
 		
     def accelLimits(self,vel_initial,vel_final,k_accel,k_decel):  
         dt = 5
         if(vel_final.linear.x - vel_initial.linear.x > 0):
              k=k_accel
-             a_max_linear = 1.5
-             a_max_angular = 6
+             a_max_linear = 6
+             a_max_angular = 10
         else:
              k=k_decel
-             a_max_linear = -1.5
-             a_max_angular = -6
+             a_max_linear = -6
+             a_max_angular = -10
         current_vel = Twist()
         dv = k*(vel_final.linear.x - vel_initial.linear.x)
         if(abs(dv/dt)>abs(a_max_linear)):
