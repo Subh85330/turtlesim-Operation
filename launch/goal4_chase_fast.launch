@@ -5,5 +5,5 @@
 	<node pkg="flytbase_turtle" type="goal4_chase_turtle_fast_RT.py" name="circler" />
 	<node pkg="flytbase_turtle" type="spawn_turtle.py" name="spawner" />
 	<node pkg="flytbase_turtle" type="goal4_chase_turtle_fast.py" name="chaser" />
-	
+	<node pkg="plotjuggler" type="plotjuggler" name="plotjuggler_node"/>
 </launch>
